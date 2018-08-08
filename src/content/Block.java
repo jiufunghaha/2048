@@ -1,6 +1,7 @@
 package content;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 
 import constant.WindowConstant;
@@ -78,7 +79,7 @@ public class Block {
 			num++;
 		}while((valueCopy /= 10) != 0);
 		//设置xy
-		xOfText = x + WindowConstant.SIZE_OF_BLOCK/2 - 5*num;
+		xOfText = x + WindowConstant.SIZE_OF_BLOCK/2 - 6*num;
 		yOfText = y + 55;
 		switch(value){
 		case 1:
@@ -159,6 +160,7 @@ public class Block {
 		g.setColor(color);
 		g.fillRect(x, y, WindowConstant.SIZE_OF_BLOCK, WindowConstant.SIZE_OF_BLOCK);
 		g.setColor(colorOfText);
+		g.setFont(new Font("宋体", Font.BOLD, 20));
 		if(value != 1)g.drawString(value+"", xOfText, yOfText);
 	}
 	

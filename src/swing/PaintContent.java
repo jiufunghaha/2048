@@ -32,6 +32,9 @@ public class PaintContent {
 		//background
 		g.setColor(new Color(187, 173, 160));
 		g.fillRect(WindowConstant.X_OF_GAMEAREA, WindowConstant.Y_OF_GAMEAREA, WindowConstant.SIZE_OF_GAMEAREA, WindowConstant.SIZE_OF_GAMEAREA);
+		g.setColor(Color.gray);
+		g.setFont(new Font("宋体", Font.BOLD, 17));
+		g.drawString("2048 by JiuFung", 155, 480);
 	}
 	
 	public static void paintWinEndInfo(Graphics g, boolean isWin, boolean isEnd){

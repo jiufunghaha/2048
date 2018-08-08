@@ -9,7 +9,7 @@ package constant;
  */
 public class WindowConstant {
 	
-	public static final int WIDTH = 465;
+	public static final int WIDTH = 470;
 	public static final int HEIGHT = 515;
 	
 	public static final int MARGIN_LEFT = 20;

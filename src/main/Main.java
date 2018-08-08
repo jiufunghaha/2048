@@ -12,6 +12,7 @@ import swing.GamePanel;
  *
  */
 public class Main {
+	
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("2048");
 		frame.setSize(WindowConstant.WIDTH, WindowConstant.HEIGHT);
